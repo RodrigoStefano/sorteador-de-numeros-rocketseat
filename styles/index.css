@@ -1,1 +1,71 @@
 @import url(./global.css);
+
+body {
+    background-color: var(--background-primary);
+    background-image: url(../image/Linha.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    padding: 2.25rem 2.75rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+header {
+    padding-bottom: 2.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2.625rem;
+}
+
+#header-layout span {
+    font: var(--overline);
+    text-transform: uppercase;
+    background: var(--gradient-content);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#header-layout h1 {
+    font: var(--display-medium);
+    color: var(--content-primary);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+#header-app-layout h2 {
+    font: var(--label-medium);
+    color: var(--content-primary);
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+#header-app-layout p {
+    font: var(--paragraph-medium);
+    color: var(--content-tertiary);
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #app-layout {
+        padding-block: 2.125rem;
+    }
+}
