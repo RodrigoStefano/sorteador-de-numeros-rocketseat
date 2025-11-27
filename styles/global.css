@@ -44,8 +44,8 @@
   --paragraph-medium: 500 0.875rem/1.5 var(--font-roboto-flex);
   --paragraph-small: 500 0.75rem/1.5 var(--font-roboto-flex);
 
-  --label-medium: 700 1.25rem/1.5 var(--font-roboto-flex);
-  --label-small: 700 1rem/1.5 var(--font-roboto-flex);
+  --label-medium: 700 1rem/1.5 var(--font-roboto-flex);
+  --label-small: 700 0.875rem/1.5 var(--font-roboto-flex);
 
 }
 
@@ -55,6 +55,20 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+input {
   color: var(--content-primary);
+}
+
+input {
+  background: none;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+}
+
+input::-webkit-inner-spin-button {
+  appearance: none;
 }
